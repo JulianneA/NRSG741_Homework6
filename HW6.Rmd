@@ -8,6 +8,8 @@ output:
   github_document: default
   word_document: default
 ---
+Rcode available here: [https://github.com/JulianneA/NRSG741_Homework6](https://github.com/JulianneA/NRSG741_Homework6)
+
 ## Installing New Packages from Bioconductor
 ```{r, eval=FALSE}
 #Already have GGPlot2- download the other 3 from bioconductor
