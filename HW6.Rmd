@@ -1,0 +1,43 @@
+---
+title: 'Homework 6: Install and Version Verification'
+author: "Julianne"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  pdf_document: default
+  html_document: default
+  github_document: default
+  word_document: default
+---
+## Installing New Packages from Bioconductor
+```{r, eval=FALSE}
+#Already have GGPlot2- download the other 3 from bioconductor
+source("https://bioconductor.org/biocLite.R")
+biocLite("dada2")
+biocLite("phyloseq")
+biocLite("ShortRead")
+```
+
+## Installing Related Files 
+
+* Installed Fastq File, the RDP training set, the RDP Species Assignment
+    * Stored here: /Users/jules/Desktop/NRSG741-Big Data/HW6_files
+    * _Note_: No R-code needed
+
+## Evidence of Sufficient Install
+```{r}
+library(dada2); packageVersion("dada2");
+
+library(phyloseq); packageVersion("phyloseq");
+
+library(ShortRead); packageVersion("ShortRead");
+
+library(ggplot2); packageVersion("ggplot2");
+
+path2 <- "/Users/jules/Desktop/NRSG741-Big Data/HW6_files/"
+fns2 <- list.files(path2)
+fns2
+
+path <- "/Users/jules/Desktop/NRSG741-Big Data/HW6_files/MiSeq_SOP/"
+fns <- list.files(path)
+fns
+```
